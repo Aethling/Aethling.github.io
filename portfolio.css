@@ -1,0 +1,249 @@
+header {
+	padding: 10px;
+	height: 62px;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  transition: background-color .4s;
+  z-index: 1;
+}
+.name {
+	font-size: 24pt;
+	transition: font-size .6s;
+  color: white;
+}
+.logo {
+  fill: white;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("./pics/AricCampingpic.jpg");
+
+    /* Set a specific height */
+    min-height: 550px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+body {
+	width: 100%;
+	transition: .5s;
+}
+
+.sidenav a:hover {
+    color: #e9ecef;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.menuButton {
+	font-size: 40px;
+  color: white;
+  margin-top: -10px;
+  cursor:pointer;
+	float:right
+}
+#bannerText {
+	position: relative;
+	font-family: 'Open Sans Condensed', sans-serif;
+	top: 174px;
+	color: white;
+	font-size: 47px;
+	text-align: center;
+	text-shadow: 1px 1px 15px #000;
+	opacity: 1;
+	transition: opacity .5s;
+
+}
+#bannerText p {
+	font-size: 23px;
+}
+.main {
+	font-family: 'Open Sans Condensed', sans-serif;
+	height: auto;
+	background-color: #f8f9fa;
+	/*font-size: 34px;*/
+  text-align: center;
+  padding-top: 100px;
+}
+.bio {
+  text-align: left;
+	margin-top: 110px;
+}
+.intro{
+	font-size: 20pt;
+  padding: 25px;
+}
+.projectSection {
+  background-image: url(AricMtBaker.jpg);
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 150px;
+  text-align: left;
+  height: 761px;
+}
+.projectSection p {
+  font-size: 30px;
+}
+.projectSection h3 {
+  color: white;
+}
+
+.grid-container {
+	display: flex;
+  flex-wrap: wrap;
+}
+.projectContainer {
+  margin: auto;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.parent {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 1px 0px 3px;
+
+}
+.child {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all .5s;
+}
+.bg-one {
+	background-image: url("./pics/TicTac.png");
+}
+.bg-two {
+	background-image: url("./pics/Hangman.png");
+}
+.bg-three {
+	background-image: url("./pics/Todolist.png");
+}
+.bg-four {
+	background-image: url("./pics/PostIt.png");
+}
+.bg-five {
+	background-image: url("./pics/Calculator.png");
+}
+.bg-six {
+	background-image: url("./pics/Giphy.png");
+}
+.bg-seven {
+	background-image: url("./pics/Quote.png");
+}
+.bg-eight {
+	background-image: url("./pics/Calculator.png");
+}
+.child:before {
+	content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+.parent:hover .child,
+.parent:focus .child {
+	transform: scale(1.2);
+}
+.parent:hover .child:before, 
+.parent:focus .child:before {
+    display: block;
+}
+.child a {
+	display: none;
+  font-size: 22px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  height: 51px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+    color: white;
+}
+.aboutMe {
+  font-size: 20pt;
+  margin-top: 25px;
+  text-align: left;
+  padding: 25px;
+}
+
+
+.techSection {
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 315px;
+}
+.techTitles {
+  margin-left: 20px;
+}
+.techContainer {
+  margin-top: 15px;
+}
+.progBar {
+  margin-top: 10px;
+}
+.techIcon {
+  transform: scale(1.7);
+  transition: 1s;
+}
+.titleContainer {
+  display: inline;
+}
+.contact {
+  height: 125px;
+  padding-top: 20px;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
