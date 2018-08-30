@@ -167,7 +167,16 @@ body {
 	background-image: url("./pics/Quote.png");
 }
 .bg-eight {
-	background-image: url("./pics/Simon.png");
+  background-image: url("./pics/Simon.png");
+}
+.bg-nine {
+  background-image: url("./pics/taskApp.png");
+}
+.bg-ten {
+  background-image: url("./pics/weather5Day2.png");
+}
+.bg-eleven {
+	background-image: url("./pics/recipeBox.png");
 }
 .child:before {
 	content: "";
