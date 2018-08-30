@@ -1,4 +1,4 @@
-/* Set the width of the side navigation to 200px */
+/* Set the width of the side navigation to 20% */
 	function openNav() {
 	    document.getElementById("mySidenav").style.width = "20%";
 	    document.getElementsByTagName("body")[0].style.width = "80%";
@@ -17,12 +17,17 @@
 	};
 	function headerAnimate() {
 		const docScroll = document.documentElement.scrollTop;
+		let logoStyle = document.getElementsByTagName("img")[0];
 	    if (docScroll > 200) {
 	    	document.getElementsByTagName("header")[0].style.backgroundColor = "black";
-	    	document.getElementsByTagName("span")[0].style.fontSize = "16pt";
+	    	logoStyle.style.width = "110px";
+	    	logoStyle.style.height = "80px";
+	    	logoStyle.style.top = "-10px";
 	    } else if (docScroll < 200) {
 	    	document.getElementsByTagName("header")[0].style.removeProperty("background-color");
-	    	document.getElementsByTagName("span")[0].style.fontSize = "24pt";
+	    	logoStyle.style.width = "140px";
+	    	logoStyle.style.height = "100px";
+	    	logoStyle.style.top = "-20px";
 		  } else {
 	        document.getElementById("header").className = "";
 	    }

@@ -9,13 +9,10 @@ header {
   z-index: 1;
 }
 .name {
-	font-size: 24pt;
-	transition: font-size .6s;
-  color: white;
-}
-.logo {
-  fill: white;
-}
+    transition: .6s;
+    position: absolute;
+    top: -20px;
+  }
 
 .parallax {
     /* The image used */
@@ -170,7 +167,7 @@ body {
 	background-image: url("./pics/Quote.png");
 }
 .bg-eight {
-	background-image: url("./pics/Calculator.png");
+	background-image: url("./pics/Simon.png");
 }
 .child:before {
 	content: "";
