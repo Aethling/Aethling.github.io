@@ -49,8 +49,8 @@ header {
     transition: 0.3s;
 }
 body {
-	width: 100%;
-	transition: .5s;
+  width: 100%;
+  transition: .5s;
 }
 
 .sidenav a:hover {
@@ -65,60 +65,60 @@ body {
     margin-left: 50px;
 }
 .menuButton {
-	font-size: 40px;
+  font-size: 40px;
   color: white;
   margin-top: -10px;
   cursor:pointer;
-	float:right
+  float:right
 }
+
 #bannerText {
-	position: relative;
-	font-family: 'Open Sans Condensed', sans-serif;
-	top: 174px;
-	color: white;
-	font-size: 47px;
-	text-align: center;
-	text-shadow: 1px 1px 15px #000;
-	opacity: 1;
-	transition: opacity .5s;
+  position: relative;
+  font-family: 'Open Sans Condensed', sans-serif;
+  top: 174px;
+  color: white;
+  font-size: 47px;
+  text-align: center;
+  text-shadow: 1px 1px 15px #000;
+  opacity: 1;
+  transition: opacity .5s;
 
 }
 #bannerText p {
-	font-size: 23px;
+  font-size: 23px;
 }
 .main {
-	font-family: 'Open Sans Condensed', sans-serif;
-	height: auto;
-	background-color: #f8f9fa;
-	/*font-size: 34px;*/
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: auto;
+  background-color: #f8f9fa;
+  /*font-size: 34px;*/
   text-align: center;
   padding-top: 100px;
 }
 .bio {
   text-align: left;
-	margin-top: 110px;
+  margin-top: 110px;
 }
 .intro{
-	font-size: 20pt;
+  font-size: 20pt;
   padding: 25px;
 }
 .projectSection {
   background-image: url(pics/AricMtBaker.jpg);
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
   margin-top: 150px;
   text-align: left;
-  height: 761px;
+  height: 100%;
 }
-.projectSection p {
-  font-size: 30px;
-}
-.projectSection h3 {
+
+.projectSection h3, .projectSection p {
   color: white;
 }
 
 .grid-container {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
 }
 .projectContainer {
@@ -136,35 +136,35 @@ body {
 
 }
 .child {
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	transition: all .5s;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .5s;
 }
 .bg-one {
-	background-image: url("./pics/TicTac.png");
+  background-image: url("./pics/TicTac.png");
 }
 .bg-two {
-	background-image: url("./pics/Hangman.png");
+  background-image: url("./pics/Hangman.png");
 }
 .bg-three {
-	background-image: url("./pics/Todolist.png");
+  background-image: url("./pics/Todolist.png");
 }
 .bg-four {
-	background-image: url("./pics/PostIt.png");
+  background-image: url("./pics/PostIt.png");
 }
 .bg-five {
-	background-image: url("./pics/Calculator.png");
+  background-image: url("./pics/Calculator.png");
 }
 .bg-six {
-	background-image: url("./pics/Giphy.png");
+  background-image: url("./pics/Giphy.png");
 }
 .bg-seven {
-	background-image: url("./pics/Quote.png");
+  background-image: url("./pics/Quote.png");
 }
 .bg-eight {
   background-image: url("./pics/Simon.png");
@@ -176,10 +176,10 @@ body {
   background-image: url("./pics/weather5Day2.png");
 }
 .bg-eleven {
-	background-image: url("./pics/recipeBox.png");
+  background-image: url("./pics/recipeBox.png");
 }
 .child:before {
-	content: "";
+  content: "";
   display: none;
   height: 100%;
   width: 100%;
@@ -190,14 +190,14 @@ body {
 }
 .parent:hover .child,
 .parent:focus .child {
-	transform: scale(1.2);
+  transform: scale(1.2);
 }
 .parent:hover .child:before, 
 .parent:focus .child:before {
     display: block;
 }
 .child a {
-	display: none;
+  display: none;
   font-size: 22px;
   font-family: sans-serif;
   text-align: center;
@@ -248,7 +248,16 @@ body {
   width: 100%;
   background-color: lightgrey;
 }
+/*Only have sidenav on bigger screens*/
 
+@media screen and (max-width: 600px) {
+  .parallax {
+    background-image: url(pics/AricMtBaker.jpg);
+  }
+  .sidenav, .menuButton {
+    display: none;
+  }
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
