@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<link rel="stylesheet" src="bootstrap.min.css">
@@ -12,16 +13,16 @@
 	<div id="banner">
 		<header id="header">
 			<span>
-			<img src="pics/logo.png" class="name">
+			<img src="pics/finalLogo.png" class="name">
 		</span>
-<!-- 			<span class="name">Aric Essig</span>
- -->			<div id="mySidenav" class="sidenav">
+<!-- 			<span class="name">Aric Essig</span>-->
+			<div id="mySidenav" class="sidenav">
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <a href="#">Home</a>
-			  <a href="#">Bio</a>
-			  <a href="#">Projects</a>
-			  <a href="#">Skills</a>
-			  <a href="#">Contact</a>
+			  <a class="menuHome" href="#">Home</a>
+			  <a class="menuBio" href="#">Bio</a>
+			  <a class="menuProjects" href="#">Projects</a>
+			  <a class="menuSkills" href="#">Skills</a>
+			  <a class="menuContact"href="#">Contact</a>
 			</div>
 				<!-- Use any element to open the sidenav -->
 			<span class="menuButton" onclick="openNav()">&#9776;</span>
@@ -81,6 +82,14 @@
 						<div class="parent">
 							<div class="child bg-four">
 								<a href="https://htmlpreview.github.io/?https://github.com/Aethling/Post-it-app/blob/master/index.html">Post-it App</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="projectContainer">
+						<div class="parent">
+							<div class="child bg-twelve">
+								<a href="https://htmlpreview.github.io/?https://github.com/Aethling/Post-it-app/blob/master/index.html">Local Weather</a>
 							</div>
 						</div>
 					</div>
@@ -217,10 +226,11 @@
 			</div>
 			<div class="contact">
 				<h3>Contact me:</h3>
+				<h5>650-608-1598</h5>
 				<h5>Email: aricessig@gmail.com</h5>
 			</div>
 		</div>
 </body>
-	<script type="text/javascript" src="scripts/ jquery-3.3.1.js"> </script>
+	<script type="text/javascript" src="scripts/jquery-3.3.1.js"> </script>
 	<script type="text/javascript" src="portfolio.js"> </script>
 </html>

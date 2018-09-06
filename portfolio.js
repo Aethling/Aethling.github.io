@@ -84,4 +84,37 @@
 	      $element.removeClass('techIcon');
 	    }
      });
-}
+	}
+
+
+$(".menuHome").click(function() {
+    $('html,body').animate({
+        scrollTop: 0},
+        'slow');
+});
+$(".menuBio").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".aboutMe").offset().top -62},
+        'slow');
+});
+$(".menuProjects").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".projectSection").offset().top - 62},
+        'slow');
+});
+$(".menuSkills").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".techSection").offset().top - 62},
+        'slow');
+});
+$(".menuContact").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".contact").offset().top},
+        'slow');
+});
+
+
+
+
+
+

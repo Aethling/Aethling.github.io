@@ -178,6 +178,9 @@ body {
 .bg-eleven {
   background-image: url("./pics/recipeBox.png");
 }
+.bg-twelve {
+  background-image: url("./pics/LocalWeather.png");
+}
 .child:before {
   content: "";
   display: none;
@@ -243,7 +246,8 @@ body {
   display: inline;
 }
 .contact {
-  height: 125px;
+  margin-top: 45px;
+  height: 154px;
   padding-top: 20px;
   width: 100%;
   background-color: lightgrey;
@@ -256,6 +260,17 @@ body {
   }
   .sidenav, .menuButton {
     display: none;
+  }
+  #bannerText {
+    font-size: 70px;
+  }
+  .intro {
+    font-size: 24pt;
+  }
+  .parent {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
   }
 }
 @media screen and (max-height: 450px) {
