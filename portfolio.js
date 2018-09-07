@@ -22,12 +22,12 @@
 	    	document.getElementsByTagName("header")[0].style.backgroundColor = "black";
 	    	logoStyle.style.width = "110px";
 	    	logoStyle.style.height = "80px";
-	    	logoStyle.style.top = "-10px";
+	    	logoStyle.style.top = "-3px";
 	    } else if (docScroll < 200) {
 	    	document.getElementsByTagName("header")[0].style.removeProperty("background-color");
-	    	logoStyle.style.width = "140px";
-	    	logoStyle.style.height = "100px";
-	    	logoStyle.style.top = "-20px";
+	    	logoStyle.style.width = "150px";
+	    	logoStyle.style.height = "110px";
+	    	logoStyle.style.top = "-10px";
 		  } else {
 	        document.getElementById("header").className = "";
 	    }
@@ -85,7 +85,6 @@
 	    }
      });
 	}
-
 
 $(".menuHome").click(function() {
     $('html,body').animate({
