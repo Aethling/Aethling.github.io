@@ -10,6 +10,31 @@
 	    document.getElementsByTagName("body")[0].style.width = "100%";
 
 	}
+
+	const jmediaquery = window.matchMedia( "(max-width: 600px)" )
+	// if (jmediaquery.matches) {
+	// 	console.log("its max");
+	// } else {
+	// 	console.log("less than 600");
+	// };
+	if (matchMedia) {
+		const mq = window.matchMedia("(max-width: 600px)");
+		mq.addListener(WidthChange);
+		WidthChange(mq);
+	}
+
+// media query change
+function WidthChange(mq) {
+	if (mq.matches) {
+		closeNav();
+	}
+	// } else {
+	// 	console.log("screen is more than 600px");
+	// }
+
+	}
+
+
 	window.onscroll = function() {
 		headerAnimate();
 		bannerFade();
@@ -46,7 +71,7 @@
 		} 
 	}
 	
-	function move() {
+	/*function move() {
     var elem = document.getElementById("myBar"); 
     var width = 1;
     var id = setInterval(frame, 10);
@@ -58,7 +83,7 @@
             elem.style.width = width + '%'; 
         }
     }
-	}
+	}*/
 
 	let $animation_elements = $('.animation_element');
 	let $window = $(window);
