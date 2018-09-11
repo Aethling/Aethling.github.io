@@ -94,6 +94,7 @@ body {
   /*font-size: 34px;*/
   text-align: center;
   padding-top: 100px;
+  margin-top: -21px;
 }
 .bio {
   text-align: left;
@@ -302,7 +303,7 @@ body {
     border-radius: 30px;
   }
   .projectSection {
-    background-image: url(pics/treeClimb.jpg);
+    background-image: url(pics/elephantBeach.jpg);
   }
 }
 @media screen and (max-height: 450px) {
