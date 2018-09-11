@@ -63,6 +63,7 @@ function WidthChange(mq) {
 		} 
 	}
 
+//animates the tech icons
 	let $animation_elements = $('.animation_element');
 	let $window = $(window);
 	$window.on('scroll resize', check_if_in_view);
@@ -72,7 +73,6 @@ function WidthChange(mq) {
 	  var window_height = $window.height();
 	  var window_top_position = $window.scrollTop();
 	  var window_bottom_position = (window_top_position + window_height);
-
 	  $.each($animation_elements, function() {
 	    var $element = $(this);
 	    var element_height = $element.outerHeight();
@@ -89,6 +89,7 @@ function WidthChange(mq) {
      });
 	}
 
+//menu items that scroll to place on screen.
 $(".menuHome").click(function() {
     $('html,body').animate({
         scrollTop: 0},
