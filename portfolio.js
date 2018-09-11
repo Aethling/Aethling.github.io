@@ -12,27 +12,17 @@
 	}
 
 	const jmediaquery = window.matchMedia( "(max-width: 600px)" )
-	// if (jmediaquery.matches) {
-	// 	console.log("its max");
-	// } else {
-	// 	console.log("less than 600");
-	// };
 	if (matchMedia) {
 		const mq = window.matchMedia("(max-width: 600px)");
 		mq.addListener(WidthChange);
 		WidthChange(mq);
 	}
 
-// media query change
 function WidthChange(mq) {
 	if (mq.matches) {
 		closeNav();
 	}
-	// } else {
-	// 	console.log("screen is more than 600px");
-	// }
-
-	}
+	};
 
 
 	window.onscroll = function() {
@@ -41,14 +31,14 @@ function WidthChange(mq) {
 		bannerFade2();
 	};
 	function headerAnimate() {
-		const docScroll = document.documentElement.scrollTop;
+		const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
 		let logoStyle = document.getElementsByTagName("img")[0];
-	    if (docScroll > 200) {
+	    if (scrollTop > 200) {
 	    	document.getElementsByTagName("header")[0].style.backgroundColor = "black";
 	    	logoStyle.style.width = "110px";
 	    	logoStyle.style.height = "80px";
 	    	logoStyle.style.top = "-3px";
-	    } else if (docScroll < 200) {
+	    } else if (scrollTop < 200) {
 	    	document.getElementsByTagName("header")[0].style.removeProperty("background-color");
 	    	logoStyle.style.width = "150px";
 	    	logoStyle.style.height = "110px";
@@ -59,31 +49,19 @@ function WidthChange(mq) {
 	}
 	//need to get this to work properly
 	function bannerFade() {
-		if (document.documentElement.scrollTop > 180){
+		const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+		if (scrollTop > 180){
 			document.getElementById('bannerText').style.opacity = "0";
 		} else {
 			document.getElementById('bannerText').style.opacity = "1";
 		}
 	}
 	function bannerFade2() {
-		if (document.documentElement.scrollTop > 20 && document.documentElement.scrollTop < 180) {
+		const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+		if (scrollTop > 20 && scrollTop < 180) {
 			document.getElementById('bannerText').style.opacity = ".7";
 		} 
 	}
-	
-	/*function move() {
-    var elem = document.getElementById("myBar"); 
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-        if (width >= 100) {
-            clearInterval(id);
-        } else {
-            width++; 
-            elem.style.width = width + '%'; 
-        }
-    }
-	}*/
 
 	let $animation_elements = $('.animation_element');
 	let $window = $(window);
