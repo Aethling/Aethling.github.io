@@ -50,7 +50,7 @@ header {
 }
 body {
   width: 100%;
-  /*transition: .5s;*/
+  transition: .5s;
 }
 
 .sidenav a:hover {
@@ -91,7 +91,6 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   height: auto;
   background-color: #f8f9fa;
-  /*font-size: 34px;*/
   text-align: center;
   padding-top: 100px;
   margin-top: -21px;
