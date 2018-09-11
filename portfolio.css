@@ -283,8 +283,9 @@ body {
 /*Only have sidenav on bigger screens*/
 
 @media screen and (max-width: 600px) {
-  .mainPicture {
+  .parallax {
     background-image: url(pics/mountains_small.jpg);
+    background-attachment: scroll;
   }
   .sidenav, .menuButton {
     display: none;
